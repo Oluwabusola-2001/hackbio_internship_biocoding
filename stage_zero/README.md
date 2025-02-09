@@ -3,9 +3,13 @@ The task was to evaluate my undertanding on the topics covered which included: C
 The instructions were to:
 Form a team of at least 5 people and use any data structure of your choice to organize the following information:
 names, slack username, email, hobby, countries, discipline and preferred programming language on python.
+
+
 **SOLUTION**
 The details of each team member are stored in a nested dictionary named team_cysteine_members. Unique keys (team_member1, team_member2, team_member2 and team_member4) are assigned to each team member to easily access their details.
 A final print statement was used to print team_cysteine_members. 
+
+
 **OUTPUT**
 The ouput should look like this
 Hackbio_internship_oluwabusola/untitled9.py --wdir
