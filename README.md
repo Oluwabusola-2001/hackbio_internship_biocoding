@@ -7,7 +7,7 @@ https://thehackbio.com/
 In this file, you will find different repositories on the different tasks I worked on during the HACKBIO 2025 Internship(Coding for Bio)
 
 **STAGE 0**
-**Coding Syntax, Data types and Data Structures.**
+**(Coding Syntax, Data types and Data Structures.)**
 
 Task Summary:
 
@@ -17,7 +17,7 @@ Task Summary:
 
 
 **STAGE 1**
-**Functions Galore**
+**(Functions Galore)**
 
 Task Summary:
 
@@ -29,7 +29,7 @@ Task Summary:
 
 
 **STAGE 2**
-**Microbiology**
+**(Microbiology)**
 
 Task Summary:
 
@@ -43,7 +43,7 @@ Task Summary:
   
 
 **STAGE 3**
-**Age prediction in Humans**
+**(Age prediction in Humans)**
 
 Task Summary:
 
