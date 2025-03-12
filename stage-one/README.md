@@ -10,7 +10,10 @@ The task was to evaluate my undertanding on functions in Python. The instruction
 
 **SOLUTION** 
 
-The details of each team member are stored in a nested dictionary named team_cysteine_members. Unique keys (team_member1, team_member2, team_member2 and team_member4) are assigned to each team member to easily access their details. A final print statement was used to print team_cysteine_members.
+**Function_1:** I created a dictionary (codon_table) that maps out the dna sequence to the corresponding amino acids. 
+                I then defined a function that translates a dna sequence into a protein sequence.
+
+**Function_2:** 
 
 
 **OUTPUT** 
