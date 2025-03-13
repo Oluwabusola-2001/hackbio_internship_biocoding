@@ -13,8 +13,14 @@ The task was to evaluate my undertanding on functions in Python. The instruction
 **Function_1:** I created a dictionary (codon_table) that maps out the dna sequence to the corresponding amino acids. 
                 I then defined a function that translates a dna sequence into a protein sequence.
 
-**Function_2:** 
+**Function_2:** I defined a logistic_growth function that simulates the population growth curve. 
+                I added two extra parameters (lag_phase and exp_phase) to introduce randomness in the lag and exponential phases. The function calculates population size over time based on the logistic growth model.
 
+**Function 3:** I used a loop to create 100 different growth curves with varying parameters for growth rate, initial population, lag phase, and exponential phase. 
+                I stored the results in a dictionary and converted it to a dataframe-like structure.
+
+**Function 4:** I created a time_to_80_percent_K function that iterates through the population data and identifies the time point when the population reaches 80% of the carrying capacity.
+                
 
 **OUTPUT** 
 
