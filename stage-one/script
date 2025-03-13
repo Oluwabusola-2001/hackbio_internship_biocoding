@@ -35,5 +35,95 @@ def dna_to_protein(dna_sequence):
             if amino_acid == '*':  # Stop codon reached
                 break  # Stop the loop and terminate translation
                 protein_sequence += amino_acid  # Add the translated amino acid to protein string as the loop progresses
-  
     return protein_sequence # Returns the final protein sequence upon loop completion (or stop codon interruption)
+
+
+#Function 2: Logistic population growth curve function. Function should include 2 extra parameters that randomize the length of the lag phase and the exponential phase.
+# Parameters
+K = 1000   # Carrying capacity
+r = 0.5    # Growth rate
+P0 = 10    # Initial population size
+lag_phase = 5   # Duration of the lag phase
+exp_phase = 10  # Duration of the exponential phase
+time = range(51)  # Time points from 0 to 50
+
+#Define the logistic groeth function
+def logistic_growth(time, K, r, P0, lag_phase=5, exp_phase=10):
+    # Create an empty list to store population values
+    population = []
+
+    # Loop through each time point
+    for t in time:
+        if t < lag_phase:
+            # During the lag phase, the population remains constant
+            pop = P0
+        elif t < lag_phase + exp_phase:
+            # During the exponential phase, the population grows rapidly
+            pop = P0 * (2.71828 ** (r * (t - lag_phase)))
+            # Limit the population to the carrying capacity
+            if pop > K:
+                pop = K
+        else:
+            # During the logistic phase, the population stabilizes
+            pop = K / (1 + ((K - P0) / P0) * (2.71828 ** (-r * (t - lag_phase - exp_phase))))
+
+        # Add the calculated population to the list
+        population.append(pop)
+
+    # Return the list of population values
+    return population
+
+# Generate the population growth curve
+population = logistic_growth(time, K, r, P0, lag_phase, exp_phase)
+
+# Print the population size at each time point
+for t, p in zip(time, population):
+    print("Time:", t, "Population:", p)
+
+
+Function 3: Using your function, generate a dataframe with 100 different growth curves
+# Incremental sequence-based parameter generation
+data = {}
+
+for i in range(1, 101):
+    # Gradually change parameters in steps
+    rand_r = 0.1 + (i % 10) * 0.08  # Growth rate
+    rand_P0 = 5 + (i % 20) * 2  # Initial population
+    rand_lag = 1 + (i % 5)  # Lag phase duration
+    rand_exp = 5 + (i % 8)  # Exponential phase duration
+
+    population = logistic_growth(time, K, rand_r, rand_P0, rand_lag, rand_exp)
+    data[f'Curve_{i}'] = population
+
+# Convert data to a simple dataframe-like structure
+df = {"Time": list(time)}
+for curve, values in data.items():
+    df[curve] = values
+
+# Display the first few rows
+for t in range(5):
+    print({key: values[t] for key, values in df.items()})
+
+
+Function 4: # Function to find the time to reach 80% of the carrying capacity
+def time_to_80_percent_K(population, K):
+    target = 0.8 * K
+    for t, pop in enumerate(population):
+        if pop >= target:
+            return t
+    return None
+
+Function 5: Function to calculate Hamming distance between two usernames(strings)
+#define hamming distance function 
+def hamming_distance(str1, str2):
+    # Pad the shorter string with spaces to make them equal length
+    length = max(len(str1), len(str2))
+    str1 = str1.ljust(length)
+    str2 = str2.ljust(length)
+# Count the positions where the characters differ
+    return sum(ch1 != ch2 for ch1, ch2 in zip(str1, str2))
+
+# Username
+slack_username = "oluwabusola"
+x_handle = "busolami_asee"
+print("Hamming Distance:", hamming_distance(slack_username, x_handle))
