@@ -25,6 +25,7 @@ The task was to evaluate my undertanding on functions in Python. The instruction
 
 **OUTPUT** 
 Function 2 ouput should look like this C:/Users/Administrator/Hackbio_internship_oluwabusola/untitled3.py --wdir
+
 Time: 0 Population: 10
 Time: 1 Population: 10
 Time: 2 Population: 10
