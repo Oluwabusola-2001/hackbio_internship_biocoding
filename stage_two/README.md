@@ -9,4 +9,5 @@ The instructions were to:
 * Generate a box plot of the time it takes to reach carrying capacity for the knock out and the knock in strains
 * Is there a statistical difference in the time it takes the knock out strains to reach their maximum carrying capacity compared to the knock in strains
    
-**SOLUTION**
+**OUTPUT**
+The outputs have all ben uploaded.
