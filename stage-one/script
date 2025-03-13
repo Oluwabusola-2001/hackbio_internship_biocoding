@@ -113,7 +113,7 @@ def time_to_80_percent_K(population, K):
             return t
     return None
 
-Function 5: Function to calculate Hamming distance between two usernames(strings)
+Function 5: # Function to calculate Hamming distance between two usernames(strings)
 #define hamming distance function 
 def hamming_distance(str1, str2):
     # Pad the shorter string with spaces to make them equal length
