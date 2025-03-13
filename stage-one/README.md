@@ -19,10 +19,9 @@ The task was to evaluate my undertanding on functions in Python. The instruction
 **Function 3:** I used a loop to create 100 different growth curves with varying parameters for growth rate, initial population, lag phase, and exponential phase. 
                 I stored the results in a dictionary and converted it to a dataframe-like structure.
 
-**Function 4:** I created a time_to_80_percent_K function that iterates through the population data and identifies the time point when the population reaches 80% of the carrying capacity.
-                
+**Function 4:** I defined a function for time_to_80_percent_K that iterates through the population data and identifies the time point when the population reaches 80% of the carrying capacity.
+
+**Function 5:** I defined a hamming_distance function that compares two strings(USERNAME). If the strings are of different lengths, I padded the shorter string with spaces to ensure accurate comparison.
 
 **OUTPUT** 
-
-
 The ouput should look like this Hackbio_internship_oluwabusola/untitled9.py --wdir {'team_member1': {'name': 'Oluwabusola Asenuga', 'slack_username': 'Oluwabusola', 'email': 'asenugaoluwabusola@gmail.com', 'hobbies': 'watching vlogs, reading novels, dressing up', 'country': 'nigeria', 'discipline': 'zoology', 'preferred_language': 'python'}, 'team_member2': {'name': 'Kaosara Olabode', 'slack_username': 'TheResearchNerd', 'email': 'olabodeomowunmi5@gmail.com', 'hobbies': 'research, travelling, fashion', 'country': 'nigeria', 'discipline': 'natural product chemistry', 'preferred_language': 'R'}, 'team_member3': {'name': 'Himabindu Kumdam', 'slack_username': 'Himabindu', 'email': 'khbiitm@gmail.com', 'hobbies': 'music', 'country': 'india', 'discipline': 'biotechnology', 'preferred_language': 'R'}, 'team_member4': {'name': 'Aisha Mehmood', 'slack_username': 'Aisha', 'email': 'aishamehmood23@gmail.com', 'hobbies': 'reading, shopping', 'country': 'pakistan', 'discipline': 'biotechnology', 'preferred_language': 'R'}}
