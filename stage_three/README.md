@@ -9,7 +9,11 @@ In your feature selection step, reduce the number of features to select to 90, 8
 Generate a plot of the number of features against the mse values
 
 **SOLUTION** 
+I loaded the dataset using Pandas to access the features (CpG sites) and the target variable (age).
+I calculated the correlation between each feature and the target (age). I then selected the top k features with the highest absolute correlation to reduce dimensionality.
+I implemented a simple linear regression model.
+I plotted the number of features against the MSE to understand how the error changes as the feature count decreases.
 
 
 **OUTPUT** 
-
+Uploaded the output
